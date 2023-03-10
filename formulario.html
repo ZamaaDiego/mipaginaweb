@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" href="estilos.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(21,26,126);
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+      }
+      
+      li a:hover {
+        background-color: rgb(137, 141, 214);
+      }
+      </style>
+</head>
+<body>
+  <ul class="tabla">
+    <li class="que"><a href="index.html">Index</a></li>
+    <li class="que"><a href="Bio.html">Biografia</a></li>
+    <li class="que"><a href="fotos.html">fotos</a></li>
+    <li class="que"><a href="music.html">musica</a></li>
+    <li class="que"><a href="tabla.html">Contactos</a></li>
+    <li class="que"><a href="Parientess.html">Parientes</a></li>
+    <li class="que"><a href="formulario.html">formulario</a></li>
+    <li class="que"><a href="paginaresponsiva.html">Columnas</a></li>
+  </ul>
+
+<p>
+<form class="hola" action="mailto:osunadiego64@gmail.com" method="get" enctype="text/plain">
+    <label for="fname">Nombre:</label><br>
+    <input type="text" id="fname" name="fname" size="60" maxlength="50"  placeholder="Nombres-Apellido paterno-Apellido materno" autofocus required><br>
+
+    <label for="fpassword">Contraseña:</label><br>
+    <input type="password" id="fpassword" name="fpassword"><br>
+
+    <label for="correo">Correo:</label><br>
+    <input type="text" id="correo" name="lname" placeholder="usuario@correo.com" ><br><br>
+    
+    <label for="fnacimiento">Fecha nacimiento:</label>
+    <input type="datetime-local" id="fnacimiento" name="fnacimiento" min="1900-01-01"><br><br>
+
+<label for="color de pelo" style="font-size: larger;">Color de pelo</label>
+<input type="Color" id="Color de pelo"><br><br>
+<label for="ffoto">Elige una foto para tu perfil</label>
+<input type="file" id="ffoto" name="ffoto"><br><br>
+<label for="quantity">Promedio:</label>
+<input type="number" id="quantity" name="quantity" min="0" max="10" step=".1" value="0"><br><br>
+<label for="vol">Grado de satisfaccion escuela:</label>
+  <input type="range" id="vol" name="vol" min="0" max="10"><br><br>
+  <label for="phone">Ingresa el numero telefonico:</label>
+  <input type="tel" id="phone" name="phone" pattern="[0-9]{4}-[0-9]{2}-[0-9]{4}">
+
+  <br><br>
+
+
+
+    <fieldset>
+        <label for="genero">Genero</label><br>
+        <input type="radio" id="Hombre" name="Generose" value="Hombre">
+        <label for="Hombre">Hombre</label><br>
+        <input type="radio" id="Mujer" name="Generose" value="Mujer">
+        <label for="Mujer">Mujer</label><br>
+</fieldset><br>
+
+    <label for="Preferencias">Preferencias</label><br>
+    <input type="checkbox" id="com1" name="comida1" value="Comida1">
+    <label for="Comida1"> Sushi</label><br>
+    <input type="checkbox" id="com2" name="comida2" value="Comida2">
+    <label for="Comida2"> Pizza</label><br>
+    <input type="checkbox" id="com3" name="comida3" value="Comida3">
+    <label for="Comida3"> Enchiladas</label><br><br>
+
+   <label for="Estado">Seleccione su estado de nacimiento</label><br><br>
+
+<select id="Estado" name="Estado">
+    <option value="Aguacalientes">Aguascalientes</option>
+    <option value="Baja California">Baja California</option>
+    <option value="Baja California Sur">Baja California Sur</option>
+    <option value="Campeche">Campeche</option>
+    <option value="Coahuila">Coahuila</option>
+    <option value="Colima">Colima</option>
+    <option value="Chiapas">Chiapas</option>
+    <option value="Chihuahua">Chihuahua</option>
+    <option value="Durango">Durango</option>
+    <option value="Distrito Federal">Distrito Federal</option>
+    <option value="Guanajuato">Guanajuato</option>
+    <option value="Guerrero">Guerrero</option>
+    <option value="Hidalgo">Hidalgo</option>
+    <option value="Jalisco">Jalisco</option>
+    <option value="Mexico">Mexico</option>
+    <option value="Michoacan">Michoacan</option>
+    <option value="Morelos">Morelos</option>
+    <option value="Nayarit">Nayarit</option>
+    <option value="Nuevo Leon">Nuevo Leon</option>
+    <option value="Oaxaca">Oaxaca</option>
+    <option value="Puebla">Puebla</option>
+    <option value="Queretaro">Queretaro</option>
+    <option value="Quintana Roo">Quintana Roo</option>
+    <option value="San Luis Potosi">San Luis Potosi</option>
+    <option value="Sinaloa">Sinaloa</option>
+    <option value="Sonora">Sonora</option>
+    <option value="Tabasco">Tabasco</option>
+    <option value="Tamaulipas">Tamaulipas</option>
+    <option value="Tlaxcala">Tlaxcala</option>
+    <option value="Veracruz">Veracruz</option>
+    <option value="Yucatan">Yucatan</option>
+    <option value="Zacatecas">Zacatecas</option>
+    <option value="Extranjero">Extranjero</option>
+
+    
+</select><br><br>
+
+<input list="Ciudad">
+  <datalist id="Ciudad">
+    <option value="Los Mochis">
+    <option value="Culiacan">
+    <option value="Mazatlan">
+    <option value="Concordia">
+    <option value="Escuinapa">
+  </datalist>
+<br>
+
+<button type="button" onclick="alert('Presionaste el boton')">Haz click!</button><br>
+    <label for="come">Comentarios</label><br>
+    <textarea name="Comentarios" rows="10" cols="30">
+        
+        </textarea><br><br>
+
+
+
+
+
+<input type="reset">
+      <input type="submit" name="submit" value="Enviar"/>
+<input type="image" src="q.png" alt="enviar" width="160" height="52">
+
+
+</form>
+
+</p>
+
+
+</head>
+</body>
+
+</html>
